@@ -1,0 +1,3 @@
+.vagrant
+root-ca.crt
+libvirt_net
