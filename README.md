@@ -3,8 +3,11 @@ Kubernetes playground
 
 Just use one of those  providers:
 
------ Virtualbox
------ libvirt/kvm + vagrant/ vagrant-libvirt plugin 
+-----
+Virtualbox
+
+-----
+libvirt/kvm + vagrant/ vagrant-libvirt plugin 
 
 
 , then execute within this repo
@@ -12,7 +15,7 @@ Just use one of those  providers:
 ```
 vagrant up
 ```
-Probabbly you will nees some tweaks to fit your enviromen.
+Probably you will need some tweaks to fit your environment. 
 WIll not work out-of the box
 
 
