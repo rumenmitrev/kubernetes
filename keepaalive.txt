@@ -12,7 +12,7 @@ if ip addr | grep -q 172.18.18.200; then
 fi
 EOF
 -------------------------------------------------------------------------------------
-cat >>/etc/keepalived/keepalived.conf<<EOF 
+root@loadbalancer1:~# cat /etc/keepalived/keepalived.conf 
 vrrp_script check_apiserver {
   script "/etc/keepalived/check_apiserver.sh"
   interval 3
@@ -39,9 +39,8 @@ vrrp_instance VI_1 {
         check_apiserver
     }
 }
-EOF
 ===================================================
-cat >>/etc/haproxy/haproxy.cfg<<EOF
+root@loadbalancer1:~# cat /etc/haproxy/haproxy.cfg 
 
 
 frontend kubernetes-frontend
@@ -59,4 +58,3 @@ backend kubernetes-backend
     server libmaster 172.18.18.110:6443 check fall 3 rise 2
     server libmaster1 172.18.18.121:6443 check fall 3 rise 2
     server libmaster2 172.18.18.122:6443 check fall 3 rise 2
-EOF
