@@ -18,8 +18,8 @@ libvirt/kvm + vagrant/ vagrant-libvirt plugin
 ```
 vagrant up
 ```
-Probably you will need some tweaks to fit your environment. 
-WIll not work out-of the box
+Probably you will need some tweaks here and there to fit your environment. 
+WIll not work out-of the box !!!
 
 
 
